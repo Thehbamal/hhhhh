@@ -144,11 +144,11 @@ async def files(client, message):
 
     if message.text == 'hi':
 
-        await message.send_document(message.chat.id, "//valid document id here")
+        await message.send_document(message.chat.id, "AgADuwsAAue5GFA")
 
     else:
 
-        await message.send_document(message.chat.id, "//valid document id here")
+        await message.send_document(message.chat.id, "BQACAgQAAxkBAAIBJmKNxXMFQhozgEmUt92eh2nVaMq6AAK7CwAC57kYUMQN_aEfPML7HgQ")
 
 HB.run()
 
