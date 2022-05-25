@@ -138,15 +138,11 @@ async def Source_message(bot, update):
         reply_markup=reply_markup
     )     
     
-@HB.on_message(filters.text & filters.private & ~filters.me)
-async def files(HB, message):    
+@HB.on_message(filters.text | filters.private)
+async def files(client, message):    
     if message.text == 'hi':
-        await message.reply_document( "BQACAgQAAxkBAAIBJmKNxXMFQhozgEmUt92eh2nVaMq6AAK7CwAC57kYUMQN_aEfPML7HgQQ")
+        await message.send_document("//valid document id here")
     else:
-        await message.reply_document("BQACAgQAAxkBAAIBIGKNt5r-yX92Nblvnb7sLQNjVSzBAAJ0DAACX_VpUNGr2XABb4tOHgQ")
+        await message.se d_document("//valid document id here")
 
 HB.run()
-
-
-
-
