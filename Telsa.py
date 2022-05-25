@@ -138,11 +138,9 @@ async def Source_message(bot, update):
         reply_markup=reply_markup
     )     
     
-@HB.on_message(filters.text | filters.private)
-async def files(client, message):    
-    if message.text == 'hi':
-        await message.send_document("//valid document id here")
-    else:
-        await message.se d_document("//valid document id here")
+@HB.on_message(filters.command('audio'))
+def audio(bot,message):
+    bot.send_audio(message.chat.id, "")
+print("HB")  
 
-HB.run()
+
