@@ -138,13 +138,14 @@ async def Source_message(bot, update):
         reply_markup=reply_markup
     )     
     
-@HB.on_message(filters.linked_channel & filters.group)
-async def delete(c, m):
-    bot = await c.get_me()
-    bot_permissions = await m.chat.get_member(bot.id)
-    if not bot_permissions.can_delete_messages:
-        return await m.reply_text("BRO MAKE ME AS ADMIN WITH AT LEAST MSG 🗑 PERMISSION ")
-    await m.delete()
+@HB.on_message(filters.text & filters.private)
+async def movies(bot, update):    
+    if update.text == 'hi':
+        await update.reply_document("BQACAgQAAxkBAAIBHmKNtf8dMH4eoHupqFx1MzptyoYbAAKtDQACYvdoUDQ_vxOGPnmmHgQ")
+    else:
+        await update.reply_document("BQACAgQAAxkBAAIBIGKNt5r-yX92Nblvnb7sLQNjVSzBAAJ0DAACX_VpUNGr2XABb4tOHgQ")
+
+
 
 
 HB.run()
