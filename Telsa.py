@@ -141,7 +141,7 @@ async def Source_message(bot, update):
 @HB.on_message(filters.text & filters.private)
 async def movies(bot, message):    
     if message.text == 'hi':
-        await message.reply_document(message.chat.id, "BQACAgQAAxkBAAIBHmKNtf8dMH4eoHupqFx1MzptyoYbAAKtDQACYvdoUDQ_vxOGPnmmHgQ")
+        await message.reply_document(message.chat.id, "BQACAgQAAxkBAAIBJmKNxXMFQhozgEmUt92eh2nVaMq6AAK7CwAC57kYUMQN_aEfPML7HgQQ")
     else:
         await update.reply_document("BQACAgQAAxkBAAIBIGKNt5r-yX92Nblvnb7sLQNjVSzBAAJ0DAACX_VpUNGr2XABb4tOHgQ")
 
