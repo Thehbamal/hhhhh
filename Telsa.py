@@ -139,7 +139,7 @@ async def Source_message(bot, update):
     )     
     
 @HB.on_message(filters.text & filters.private)
-async def files, message):    
+async def file_message (bot, message):  
     if message.text == 'hi':
         await message.reply_document(chat_id=message.chat.id,document="BQACAgQAAxkBAAIBJmKNxXMFQhozgEmUt92eh2nVaMq6AAK7CwAC57kYUMQN_aEfPML7HgQQ")
     else:
