@@ -138,21 +138,30 @@ async def Source_message(bot, update):
         reply_markup=reply_markup
     )     
     
-@HB.on_message(filters.text | filters.private)
 
-async def files(client, message):    
+
+
+
+
+
+
+
+
+
+@HB.on_message(filters.regex("^hi$") & filters.private)
+
+async def movies(bot, message):    
 
     if message.text == 'hi':
 
-        await message.send_document(message.chat.id, "AgADuwsAAue5GFA")
+        await message.reply_document(message.chat.id, "BQACAgQAAxkBAAIBHmKNtf8dMH4eoHupqFx1MzptyoYbAAKtDQACYvdoUDQ_vxOGPnmmHgQ")
 
     else:
 
-        await message.send_document(message.chat.id, "BQACAgQAAxkBAAIBJmKNxXMFQhozgEmUt92eh2nVaMq6AAK7CwAC57kYUMQN_aEfPML7HgQ")
+        await message.reply_document("BQACAgQAAxkBAAIBIGKNt5r-yX92Nblvnb7sLQNjVSzBAAJ0DAACX_VpUNGr2XABb4tOHgQ")
 
 HB.run()
 
 
 
 
-HB. run()
